@@ -11,41 +11,17 @@
 	<script type="text/javascript" src="../lib/jquery/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="../lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/form.css">
 </head>
 <body>
 	<!-- header -->
-	<header>
-		<img src="../imgs/sport-icon.png" alt="Not available now">
-		<div class="menu-wrapper">
-			<div class="header-left">
-				<ul>
-					<li><a href="home.php">Home</a></li>
-					<li><a href="">Booking</a></li>
-					<li><a href="">Team</a>
-						<div class="sub-menu-team">
-							<ul>
-								<li><a href="">Create a team</a></li>
-								<li><a href="">Team information</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="">Membership</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</div>
-			<div class="header-right">
-				<ul>
-					<li><a href="">Sign in</a></li>
-					<li><a href="">Register</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
+	<?php  
+		include_once("../layout/header.php");
+	?>
 
 	<!-- main -->
 	<main>
-		<section id="signin-banner">
+		<section class="form-heading">
 			<h2 style="display: inline">Your Account</h2>
 		</section>
 
@@ -61,7 +37,7 @@
 					<h5>Password</h5>
 					<div id="eye-toggle">
 						<input type="password" placeholder="Password" name="user-password">
-						<button>Show</button>
+						<button class="PassShow">Show</button>
 					</div>
 					
 
@@ -104,12 +80,13 @@
 				<div>
 					<h3>You don't have any account?</h3>
 					<p>In that case, you are missing out on:</p>
-					<button><a href="register.php">Register</a></button>
+					<a href="register.php"><button>Register</button></a>
 				</div>
 			</div>
 		</section>
 	</main>
 
 	<!-- footer -->
+	<script type="text/javascript" src="../js/javascript.js"></script>
 </body>
 </html>

@@ -16,12 +16,9 @@ a {
 	src:url("fonts/SmoochSans-Regular.ttf");
 }
 
-/*Other pages - banner*/
-main #signin-banner {
-	width: 100%;
-	height: 182px;
-	background-image: url("../imgs/signin-banner.png");
-	background-size: cover; 
+@font-face {
+	font-family: "raleway-regular";
+	src:url("fonts/Raleway-Regular.ttf");
 }
 
 /*header*/
@@ -125,12 +122,19 @@ header .menu-wrapper .header-left ul li:nth-child(3):hover .sub-menu-team ul li 
 /*main*/
 
 /*banner*/
+main {
+	position: relative; 
+	width: 100%; 
+	height: 3400px;
+}
+
 main #banner {
 	width: 100%;
 	height: 500px;
 	/*background-color: #02F9B6;*/
-	background-image: url("../imgs/background_banner.png");
+	background-image: url("../imgs/main-banner.png");
 	background-size: cover;
+	background-attachment: fixed;
 	margin-top: 10px;  
 	position: relative; 
 }
@@ -226,174 +230,334 @@ main #banner .grid-wrapper .grid-item:nth-child(6) h6 {
 }
 
 
-/*Sign in page*/
-
-/*signin-banner*/
-main #signin-banner h2 {
-	color: white;
-	position: relative;
-	top: 35%;
-	left: 20%;
-	font-weight: 700;
-	font-size: 50px;   
+/*match-bar*/
+main #match-bar {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 35px;
+	left: 200px;
+	background-color: white;
 }
 
-main #signin-form {
+main #match-bar .match-week {
+	border: 1px solid #ecf0f1;
+	padding: 0px 20px 10px 10px;
+	box-shadow: 0px 5px 3px #95a5a6; 
+	margin-bottom: 25px;
+	/*border-top: 5px solid linear-gradient(to right, #A23AF1, #CA32C1, #F7298B);*/
+}
+
+main #match-bar .match-week img {
+	width: 191px; 
+	margin: 5px 0 30px 0;  
+	/*image-rendering: pixelated;*/
+}
+
+main #match-bar .match-week img:last-child {
+	margin-bottom: 0;  
+}
+
+main #match-bar .match-week h4 {
+	color: white;
+	margin-bottom: 20px; 
+	font-weight: bolder;
+	background-image: linear-gradient(to right, #A23AF1, #CA32C1, #F7298B);
+	padding: 10px; 
+}
+
+main #match-bar .match-week h5 {
+	font-weight: bold;
+	font-family: smooch-regular;
+	font-size: 20px;
+	background-color: #ecf0f1;
+}
+
+main #match-bar .player-list {
+	border: 1px solid #ecf0f1;
+	box-shadow: 0px 5px 3px #95a5a6;  
+	margin-bottom: 20px; 
+}
+
+main #match-bar .player-list:hover .player-card:last-child {
+	background-color: #686de0;
+	color: white;
+}
+
+main #match-bar .player-list .player-card {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between; 
+	align-items: center; 
+	padding: 10px; 
+	border-bottom: 1px solid #ecf0f1;    
+}
+
+main #match-bar .player-list img {
+	width: 223px;  
+}
+
+main #match-bar .player-list .player-card span:nth-child(1) {
+	font-size: 10px;
+}
+
+main #match-bar .player-list .player-card span:nth-child(2) {
+	font-weight: bold;
+	font-size: 10px; 
+}
+
+main #match-bar .player-list .player-card:first-child {
+	background-color: #ecf0f1;
+}
+
+main #match-bar .player-list .player-card:first-child > span {
+	font-family: smooch-regular;
+	font-weight: bold; 
+	font-size: 20px;
+}
+
+main #match-bar .player-list .player-card:nth-child(3) span img {
+	width: 20px;
+	height: 20px;
+}
+
+main #match-bar .player-list .player-card:last-child {
+	justify-content: right; 
+}
+
+main #match-bar .player-list .player-card:last-child > span {
+	font-weight: bold;
+	font-size: 10px;
+}
+
+main #match-bar .player-list .player-card:last-child i {
+	margin-left: 5px;
+	color: #FF3489; 
+}
+
+
+/*About us - website*/
+main #about-area .content-wrapper {
+	position: relative;
+	left: 30%;
+	top: 5px;
+
+	display: inline-block;
+	width: 70%;  
+
+	border-left: 3px solid #F2F2F2;
+	padding: 20px; 
+}
+
+main #about-area .content-wrapper .content-header h4{
+	font-family: smooch-regular; 
+	font-size: 50px;
+	font-weight: bold; 
+}
+
+main #about-area .content-wrapper ul li {
+	list-style: none; 
+}
+
+main #about-area .content-wrapper ul li a {
+	color: black; 
+}
+
+main #about-area .content-wrapper #content-menu {
+	background-color: #c7ecee;
+	padding: 20px 0;  
+}
+
+main #about-area .content-wrapper #content-menu ul li {
+	display: inline;
+	margin-left: 50px;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 35.75 px;
+}
+
+main #about-area .content-wrapper #content-menu ul li:hover a{
+	text-decoration: underline;
+	color: #4834d4; 
+}
+
+/*US intro*/
+main #about-area .content-wrapper #US img {
+	width: 350px;
+	height: 300px;
+	margin-right: 100px;
 } 
 
-main #signin-form .login {
-	width: 572px;
-	height: 425px;
-	margin-left: 5px; 
-}
-
-main #signin-form .login h3 {
-	color: white;
-	background-color: #E90052;
-	padding: 10px;
-}
-
-main #signin-form .form-left form {
-	padding: 10px 20px;
-}
-
-main #signin-form .form-left form h5 {
-	font-weight: bold;
-}
-
-main #signin-form .form-left form input {
-	padding: 10px;
-	border: none;
-	border-bottom: 1px solid black;
-	background-color: #E8E8E8;
-	width: 100%; 
-	margin-bottom: 20px;
-}
-
-main #signin-form .form-left form #eye-toggle {
-	position: relative; 
-}
-
-main #signin-form .form-left form #eye-toggle button {
-	position: absolute;
-	top: 10%;
-	right: 7px;
-	border: none;
-	background-color: white;
-	padding: 5px 20px;
-	font-size: 13px;
-}
-
-main #signin-form .form-left form #eye-toggle button:hover {
-	color: white;
-	background-color: black;
-}
-
-main #signin-form .form-left form #submit-area {
+main #about-area .content-wrapper #US .content-each-part {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-items: center;
 }
 
-main #signin-form .form-left form #submit-area button {
-	width: 250px;
-	padding: 10px;
-	color: white;
-	background-color: #37003C;
-	border: 1px solid black;
+main #about-area .content-wrapper #US .part-1 ul li {
+	font-family: smooch-regular;
+	font-size: 40px;
+	margin: 20px; 
 }
 
-main #signin-form .form-left form #submit-area button:hover {
-	background-color: #3498db;
-	border: 1px solid #3498db;
-}
-
-main #signin-form .form-left form .login-with {
+/*US role*/
+main #about-area .content-wrapper .content-header #role-body {
+	position: relative;  
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 30px; 
-	margin-bottom: 10px;   
+	min-height: 500px;
+	/*background: #161623;*/
+	/*background: #7bed9f;*/
+	background-image: url("../imgs/grass.jpg");
+	background-size: cover;
 }
 
-main #signin-form .form-left form .login-with hr {
-	width: 70px;
-	margin: 10px;
-	border-top: 2px solid #bdc3c7;
-}
-
-main #signin-form .form-left form .other-logins {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr); 
-	grid-template-rows: repeat(2, 1fr);
-	grid-gap: 10px;
-}
-
-main #signin-form .form-left form .other-logins .grid-item {
-	width: 250px;
-	padding: 10px;
-	color: white;
-	border: 1px solid black;
-	display: flex;
-	justify-content: center; 
-	border: none;
-	opacity: 0.9; 
-}
-
-main #signin-form .form-left form .other-logins .grid-item:hover {
-	opacity: 1; 
-}
-
-main #signin-form .form-left form .other-logins .grid-item i {
-	font-size: 20px;
-	margin-right: 10px; 
-}
-
-main #signin-form .form-right {
-	position: relative; 
-}
-
-main #signin-form .form-right div {
-	background-color: #E8E8E8;
-	width: 555px;
-	height: 376px;
-	padding: 10px;
-}
-
-main #signin-form .form-right div h3 {
-	background-color: #E8E8E8;
-	font-size: 28px;
-	line-height: 32.81px;
-	font-weight: 700;
-	color: black;
-	padding-left: 0;  
-}
-
-main #signin-form .form-right div p {
-	font-size: 28px;
-	line-height: 32.81px;
-	font-weight: 400;
-}
-
-main #signin-form .form-right div button {
+main #about-area .content-wrapper .content-header #role-body::before {
+	content: '';
 	position: absolute;
-	bottom: 53px;
-	left: 28px;
-	width: 498px;
-	height: 46px;
-	background-color: #E90052;
-	border: none;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: linear-gradient(#fe0,#fef);*/
+	background: rgba(255, 255, 255, 0.1);
+	clip-path: circle(30% at right 70%);
+}
+   
+main #about-area .content-wrapper .content-header #role-body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: linear-gradient(#2196f3, #e91e63);*/
+	background: rgba(255, 255, 255, 0.1);
+	clip-path: circle(20% at 10% 10%);
 }
 
-main #signin-form .form-right div button a {
+main #about-area .content-wrapper .content-header #role-body .container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	z-index: 1; 
+}
+  
+main #about-area .content-wrapper .content-header #role-body .container .card {
+	position: relative;
+	width: 250px;
+	height: 400px;
+	margin: 30px; 
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	/*background: rgba(255, 255, 255, 0.1);*/
+	background-image: url("../imgs/card-background.jpg");
+	background-size: cover;
+	opacity: 0.9; 
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-Left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+} 
+
+main #about-area .content-wrapper .content-header #role-body .container .card .content {
+	padding: 20px;
+	text-align: center;
+	transform: translateY(100px);
+	opacity: 0; 
+	transition: 0.5s;
+}
+
+main #about-area .content-wrapper .content-header #role-body .container .card:hover .content {
+	transform: translateY(0px);
+	opacity: 1;
+	background-image: none;
+}
+
+main #about-area .content-wrapper .content-header #role-body .container .card .content h2 {
+	position: absolute;
+	top: -80px;
+	right: 30px;
+	font-size: 8em;
+	color: rgba(255, 255, 255, 0.05);
+	pointer-events: none;
+}
+
+main #about-area .content-wrapper .content-header #role-body .container .card .content h3 {
+	font-size: 1.8em;
+	color: #fff;
+	z-index: 1;
+}
+
+main #about-area .content-wrapper .content-header #role-body .container .card .content h4 {
+	display: inline-block;
+	width: 80%;
+	color: black;
+	background-color: white;
+	border-right: 2px solid red;
+	border-left: 2px solid red;
+}
+
+main #about-area .content-wrapper .content-header #role-body .container .card .content p {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+}
+
+main #about-area .content-wrapper .content-header #role-body .container .card .content a {
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top: 15px;
+	background: #fff;
+	color: black;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 500;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+main #about-area .content-wrapper .content-header #role-body .container .card .content a:hover {
+	background-color: #0ee;
 	color: white;
 }
 
-main #signin-form .form-right div button:hover {
-	background-color: red;
+/*Application introduction*/
+main #about-area .content-wrapper #WEBSITE .part-2 h5 {
+	font-size: 20px; 
+	font-family: raleway-regular; 
+	margin: 30px;
 }
 
 /*footer*/
+footer {
+	color: white;
+	font-family: smooch-regular; 
+	border-top: 5px solid #B636DA;
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;  
+	padding: 10px; 
+	background-image: url("../imgs/footer-background.png");
+	background-size: cover;
+}
+
+footer .footer-title h4 {
+	font-size: 35px; 
+}
+
+footer .footer-copyright h5 {
+	font-size: 20px;
+}
+
+footer .stakeholder img {
+	width: 100px;
+	height: 100px;
+	margin-right: 10px; 
+}

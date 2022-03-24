@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 	include "../connectDB.php";
 
 	$user_pass = md5($_POST['user-password']);
@@ -14,7 +14,7 @@
 	// test case: 1) email:habo@gmail.com _ pass: 123
 	// test case: 2) email:admin1@gmail.com _ pass: 123456
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html>
@@ -34,74 +34,118 @@
 </head>
 <body>
 	<!-- header -->
-	<header>
-		<img src="../imgs/sport-icon.png" alt="Not available now">
-		<div class="menu-wrapper">
-			<div class="header-left">
-				<ul>
-					<li><a href="home.php">Home</a></li>
-					<li><a href="">Booking</a></li>
-					<li><a href="">Team</a>
-						<div class="sub-menu-team">
-							<ul>
-								<li><a href="">Create a team</a></li>
-								<li><a href="">Team information</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="">Membership</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</div>
-			<div class="header-right">
-				<ul>
-					<li><a href="signin.php">Sign in</a></li>
-					<li><a href="">Register</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
+	<?php 
+		include_once("../layout/header.php");
+	 ?>
 
 	<!-- main -->
 	<main>
-		<section id="banner">
-			<div class="grid-wrapper">
-				<div class="grid-item">
-					<img style="height: 350px; width: 355px" src="../imgs/banner-01.jpg" alt="error">
-				</div>
-				<div class="grid-item">
-					<h4>News</h4>
-					<h5><a href="https://www.skysports.com/">Tao Dan footbal field</a></h5>
-					<p>Located right in the center of Ho Chi Minh City. With the advantage of good facilities, the pitch is still quite new and the grass is regularly maintained. There are stands with roofs for spectators. Good drainage, suitable for all weather conditions. Especially if it rains you can cancel the pitch. Thanks to that, this is a mini football field in District 1 chosen by a large number of people to exchange in their spare time.</p>
+		<!-- banner -->
+		<?php  
+			include_once("../layout/banner.php");
+		?>
+
+		<!-- match-bar -->
+		<?php  
+			include_once("../layout/matchBar.php");
+		?>
+
+		<!-- About us - about website -->
+		<section id="about-area">
+			<div class="content-wrapper">
+				<div id="content-menu">
 					<ul>
-						<li>Cost: 400k - 700k.</li>
-						<li>Scale: 6 mini courts and 2 11-person yards.</li>
-					<ul>			
+						<li><a href="#US">ABOUT US</a></li>
+						<li><a href="#WEBSITE">ABOUT WEBSITE</a></li>
+					</ul>
 				</div>
-				<div class="grid-item">
-					<!-- banner-02 grid-item-3-->
+
+				<div id="US" class="content-header">
+					<hr>
+					<h4>Team members</h4>
+					<hr>
+
+					<div class="content-each-part part-1">	
+						<img src="../imgs/ITEC.jpg" alt="">
+						<div>
+							<ul>
+								<li>1859004 - Huỳnh Quang Bảo</li>
+								<li>1859014 - Nguyễn Đình Anh Hào</li>
+								<li>1859023 - Nguyễn Hữu Bảo Khôi</li>
+								<li>1859045 - Giáp Trung Thành</li>
+							</ul>
+						</div>
+					</div>			
+					
 				</div>
-				<div class="grid-item">
-					<h6>News</h6>
-					<p><a href="https://www.skysports.com/">Bui Tan Truong: practicing at the district 7 football field</a></p>
+		
+				<div class="content-header">
+					<hr>
+					<h4>Role</h4>
+					<hr>
+
+					<div id="role-body">
+						<div class="container">
+							<div class="card">
+							    <div class="content">
+								    <h2>G8</h2>
+								    <h3>Quang Bảo</h3>
+								    <h4 style="font-size: 25px">Programmer</h4>
+								    <p>Ensure that website visitors can easily interact with the page. I do this through the combination of design, technology and programming to code a website’s appearance, as well as taking care of debugging.</p>
+								    <a href="https://www.facebook.com/quang.bao.735" target="_blank">Facebook</a>
+							    </div>
+							</div>
+
+							<div class="card">
+							    <div class="content">
+								    <h2>G8</h2>
+								    <h3>Anh Hào</h3>
+								    <h4 style="font-size: 25px">UI/UX Design</h4>
+								    <p>Gathering user requirements, designing graphic elements and building navigation components.</p>
+								    <a href="https://www.facebook.com/profile.php?id=100005966748393" target="_blank">Facebook</a>
+							    </div>
+							</div>
+
+							<div class="card">
+							    <div class="content">
+								    <h2>G8</h2>
+								    <h3>Bảo Khôi</h3>
+								    <h4 style="font-size: 25px">Database Design</h4>
+								    <p>Defining the detailed database design, including tables, indexes, views, constraints, triggers, stored procedures, and other database-specific constructs needed to store, retrieve, and delete persistent objects.</p>
+								    <a href="https://www.facebook.com/poy.nguyen.925" target="_blank">Facebook</a>
+							    </div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
-				<div class="grid-item">
-					<!-- banner-03 grid-item-5-->
+				
+				<div id="WEBSITE" class="content-header">
+					<hr>
+					<h4>Introduction</h4>
+					<hr>
+
+					<div class="content-each-part part-2">
+						<h5>Sports Management Software is a free mobile and web application that offers a fun, fast and convenient way for players, teams, and sport centres to stay up to date with their fixtures, bookings, and competitions</h5>
+						<h5>The application helps players and teams to find available time slots and appropriate opponents. Sport centres can easily manage their customers and develop a Loyalty and VIP program. Sport centres can also organise tournaments and manage fixtures and results as well as team registration through the application</h5>
+						<video src="../imgs/internet-base.mp4"  controls autoplay loop muted width="800px" class="center-block"></video>
+						<h5>The application runs on the internet-base therefore, the owner can easily manage and supervise the day-to-day activities of the centre remotely</h5>
+						<h5>The application can be modified to suit different types of sport and different scales of centres</h5>
+						<video src="../imgs/interface.mp4"  controls autoplay loop muted width="800px" class="center-block"></video>
+						<h5>User-friendly interface helps easy transformation from traditional management methods to technology-based management methods</h5>
+						<h5>It is also possible to expand and upgrade application functions as the centre develops</h5>
+					</div>
 				</div>
-				<div class="grid-item">
-					<h6>News</h6>
-					<p><a href="https://www.skysports.com/" target="_blank">Azpilicueta: Get boosted to help stop COVID spread</a></p>
-				</div>
+
 			</div>
 		</section>
 	</main>
 
 	<!-- footer -->
-	<footer>
-		
-	</footer>
-
-	<script>
+	<?php 
+		include_once("../layout/footer.php");
+	?>
+	<!-- <script>
 		$(document).ready(function() {
 			var login_result = <?php echo json_encode($flag); ?>;
 
@@ -113,7 +157,15 @@
 				alert("User failed to login. Please try again!!!");
 			}
 		});
+	</script> -->
+	<script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+	<script>
+		VanillaTilt.init(document.querySelectorAll(".card"), {
+			max: 25,
+			speed: 400,
+			glare: true,
+			"max-glare": 1,
+		});
 	</script>
-
 </body>
 </html>
