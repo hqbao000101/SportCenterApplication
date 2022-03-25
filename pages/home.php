@@ -21,7 +21,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SManage Sport Center</title>
+	<title>G8 SportManagement</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../imgs/sport-icon-color.png" />
 	<link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.min.css">

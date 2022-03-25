@@ -1,8 +1,3 @@
-<?php 
-	var_dump($_POST);
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,10 +25,24 @@
 			<h2 style="display: inline">Choose your role</h2>
 		</section>
 
-		
-		
-	</main>
+		<!-- Role content -->
+		<section id="role-content">
+			<!-- Customer -->
+			<div>
+				<img src="../imgs/customer-icon.png" alt="">
+				<a href="home.php">
+					<button>Customer</button>
+				</a>
+			</div>
 
-	<!-- footer -->
+			<!-- Sport Center -->
+			<div>
+				<img src="../imgs/sportCenter-icon.png" alt="">
+				<a href="home.php">
+					<button>Sport Center</button>
+				</a>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
