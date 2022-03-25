@@ -1,4 +1,4 @@
-# SportCenterApplication
+# Sport Management
 Group8_CS207b_AdvancedSoftwareEngineering
 
 Group: 08
