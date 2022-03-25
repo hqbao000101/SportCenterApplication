@@ -1,6 +1,8 @@
 # SportCenterApplication
 Group8_CS207b_AdvancedSoftwareEngineering
+
 Group: 08
+
 Team member: 
 1) 1859004 - Huynh Quang Bao
 2) 1859014 - Nguyen Dinh Anh Hao
