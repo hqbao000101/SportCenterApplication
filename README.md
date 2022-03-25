@@ -1,5 +1,5 @@
 # Sport Management
-Group8_CS207b_AdvancedSoftwareEngineering
+CS207b - AdvancedSoftwareEngineering
 
 Group: 08
 
