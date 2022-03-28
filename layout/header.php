@@ -5,7 +5,7 @@
 			<div class="header-left">
 				<ul>
 					<li><a href="home.php">Home</a></li>
-					<li><a href="">Booking</a></li>
+					<li><a href="booking.php">Booking</a></li>
 					<li><a href="">Team</a>
 						<div class="sub-menu-team">
 							<ul>

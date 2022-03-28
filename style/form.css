@@ -8,6 +8,11 @@
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style: none; 
 }
 
 /*fonts*/
@@ -19,6 +24,11 @@ a {
 @font-face {
 	font-family: "raleway-regular";
 	src:url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+	font-family: "saira";
+	src:url("fonts/SairaStencilOne-Regular.ttf");
 }
 
 /*header*/
@@ -561,4 +571,439 @@ main #contact-content form .contact-item-8 button:hover {
 main #contact-content form .contact-items:nth-child(even) input:hover,
 main #contact-content form .contact-items:nth-child(even) textarea:hover {
 	border-color: blue; 
+}
+
+/*Booking information*/
+main #booking-title-wrapper {
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+	background-color: #D81920;
+	position: relative; 
+	margin: 20px 0;
+}
+
+main #booking-title-wrapper .pitch-title {
+	color: white;
+	margin-left: 50px;
+	display: flex;
+	justify-content: flex-start;
+	justify-items: center;
+	align-items: center;
+}
+
+main #booking-title-wrapper .pitch-title img {
+	width: 250px;
+	height: 180px;
+}
+
+main #booking-title-wrapper .pitch-title div h3 {
+	font-family: saira;
+	font-size: 40px;
+	margin: 5px; 
+}
+
+main #booking-title-wrapper .pitch-title div h4 {
+	font-family: raleway-regular;
+	font-size: 15px;
+	margin: 5px 15px;
+	color: white;
+}
+
+main #booking-title-wrapper .pitch-title div .share-media i {
+	margin: 5px 0px 0px 15px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+main #booking-title-wrapper .pitch-title div .share-media i:hover {
+	background-color: #f0932b;
+	box-shadow: 5px 5px 5px black;
+}
+
+/*Share*/
+main #booking-title-wrapper .pitch-title div .share-media .fa-share-alt {
+	border: none;
+	background-color: transparent;
+}
+
+/*Facebook*/
+main #booking-title-wrapper .pitch-title div .share-media .fa-facebook-square {
+	color: #4460A0;
+}
+
+/*Twitter*/
+main #booking-title-wrapper .pitch-title div .share-media .fa-twitter {
+	color: #00AAEC; 
+}
+
+/*Youtube*/
+main #booking-title-wrapper .pitch-title div .share-media .fa-youtube {
+	color: #CE1312;
+}
+
+/*Instagram*/
+main #booking-title-wrapper .pitch-title div .share-media .fa-instagram-square {
+	color: #be2edd;
+}
+
+/*Triangle shape*/
+main #booking-title-wrapper .triangle-shape {
+	border-top: 334px solid red;
+	border-right: 67px solid green;
+	border-bottom: 334px solid blue;
+	border-left: 67px solid purple;
+
+	border-color: transparent;
+	border-bottom-color: #D81920; 
+
+	display: block;
+	width: 0; 
+	height: 0;
+	position: absolute;
+	right: 653px;
+	bottom: 0;
+}
+
+/*TaoDan image*/
+main #booking-title-wrapper > img {
+	width: 720px;
+	height: 334px;
+}
+
+/*Information & Booking button*/
+main #booking-title-wrapper .infor-booking-button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 305px;
+}
+
+main #booking-title-wrapper .infor-booking-button a {
+	text-decoration: none; 
+}
+
+main #booking-title-wrapper .infor-booking-button span {
+	background-color: white;
+	padding: 5px 20px;
+	font-family: smooch-regular;
+	font-size: 30px;
+	margin-right: 10px; 
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+main #booking-title-wrapper .infor-booking-button span:hover {
+	color: black;
+	background-image: linear-gradient(to bottom, #f0932b, #ffbe76, #f6e58d, #ecf0f1, #fff);
+}
+
+/*Content - map*/
+main #booking-info-content {
+	display: flex;
+	justify-content: flex-start;  
+	margin-bottom: 50px; 
+}
+
+/*content-left*/
+main #booking-info-content .content-left {
+	display: flex;
+	flex-direction: column;
+}
+
+main #booking-info-content .content-left a button {
+	border: none;
+	background-color: #ecf0f1;
+	width: 240px;
+	height: 42px;
+	margin: 20px 0px 0px 65px;
+	font-size: 20px;   
+}
+
+main #booking-info-content .content-left a button:hover {
+	background-color: #4b7bec;
+	color: white;
+}
+
+/*content-right*/
+main #booking-info-content .content-right {
+	border-left: 2px solid #CE1312;
+	padding: 10px 18px;
+}
+
+main #booking-info-content .content-right h3 {
+	font-family: saira;
+	font-weight: bolder;
+	margin-top: 10px; 
+	font-size: 35px;
+}
+
+main #booking-info-content .content-right h4 {
+	font-family: saira;
+	font-weight: bold;
+	font-size: 30px; 
+	display: inline;
+}
+
+main #booking-info-content .content-right p {
+	font-size: 20px; 
+	display: inline;
+}
+
+/*Content - stadium information*/
+main #booking-info-content .stadium-content-right {
+	border-left: 2px solid #CE1312;
+	padding: 10px 18px;
+}
+
+main #booking-info-content .stadium-content-right h3 {
+	font-family: saira;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+main #booking-info-content .stadium-content-right p {
+	font-size: 20px; 
+}
+
+main #booking-info-content .stadium-content-right img {
+	width: 1175px; 
+}
+
+main #booking-info-content .stadium-content-right ul li {
+	list-style: circle; 
+	font-size: 20px;
+	margin: 10px 50px; 
+}
+
+main #booking-info-content .stadium-content-right .related-image {
+	display: flex;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
+}
+
+main #booking-info-content .stadium-content-right .related-image img {
+	width: 390px;
+	height: 290px;
+	opacity: 0.8; 
+}
+
+main #booking-info-content .stadium-content-right .related-image img:hover {
+	opacity: 1;
+}
+
+main #booking-info-content .stadium-content-right a {
+	text-decoration: none; 
+}
+
+main #booking-info-content .stadium-content-right a button {
+	margin: 50px auto 0px;
+	display: block;
+	width: 100%;
+	color: white;
+	background-color: #686de0;
+	border: none;
+	font-family: smooch-regular;
+	font-size: 30px;
+	padding: 10px;
+}
+
+main #booking-info-content .stadium-content-right a button:hover {
+	box-shadow: 3px 3px 3px black;
+	background-color: #4834d4;
+}
+
+/*Booking - form*/
+main #booking-form {
+	display: flex;
+	position: relative; 
+	margin-bottom: 80px; 
+	margin-top: 30px;  
+}
+
+/*form-left*/
+main #booking-form .fake-border {
+	background-image: linear-gradient(to right, #B137E0, #CB32C0, #E62DA0);
+	padding-top: 5px;
+	margin: 0px 20px 0px 77px;
+	border-radius: 10px;
+}
+
+main #booking-form .fake-border .form-left {
+	border: 2px solid #E1E1E1;
+	box-shadow: 0px 5px 5px #E1E1E1;
+	background-color: white;
+	padding-bottom: 30px; 
+	border-radius: 5px; 
+}
+
+main #booking-form .fake-border .form-left h4 {
+	border-bottom: 1px solid #E1E1E1;
+	font-size: 30px;
+	font-family: smooch-regular;
+	font-weight: 700;
+	text-align: center;
+	padding: 30px 15px 20px; 
+}
+
+/*form-right*/
+main #booking-form .form-right {
+	border-left: 2px solid #D81920;
+}
+
+main #booking-form .form-right form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	justify-items: center;
+	padding: 35px 30px 0px;
+}
+
+main #booking-form .form-right form input {
+	margin-bottom: 45px;
+	font-size: 20px;
+	font-family: raleway-regular;
+	padding: 10px 20px; 
+	width: 750px; 
+	border: 2px solid #E1E1E1;
+	box-shadow: 2px 5px 5px #E1E1E1;
+}
+
+main #booking-form .form-right form h3 {
+	margin-top: 0;
+	font-size: 20px;
+	font-family: raleway-regular;
+	width: 750px; 
+	border: 2px solid #E1E1E1;
+	box-shadow: 2px 5px 5px #E1E1E1;
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+main #booking-form .form-right form .form-booking-date {
+	display: flex;
+	justify-content: flex-start;
+	justify-items: center; 
+	padding: 40px 0px; 
+}
+
+main #booking-form .form-right form .form-booking-date h5 {
+	font-size: 20px;
+	font-family: raleway-regular;
+	margin-right: 10px; 
+	font-weight: bold;
+}
+
+main #booking-form .form-right form .form-booking-date > select {
+	width: 150px;
+	font-size: 20px;
+	font-family: raleway-regular;
+	padding: 5px;
+	margin-right: 50px;
+	border: 2px solid #E1E1E1;
+	box-shadow: 2px 5px 5px #E1E1E1; 
+
+	-webkit-appearance: none;
+}
+
+main #booking-form .form-right form > select {
+	width: 150px; 
+	border: 2px solid #E1E1E1;
+	box-shadow: 2px 5px 5px #E1E1E1;
+	font-family: raleway-regular;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	padding: 10px 0; 
+	margin: 0px 0px 40px;
+
+	-webkit-appearance: none;
+    text-indent: 1px;
+}
+
+main #booking-form .form-right form .payments {
+	display: flex;
+	justify-content: flex-start;
+}
+
+main #booking-form .form-right form .payments label {
+	display: flex;
+	align-items: center; 
+}
+
+main #booking-form .form-right form .payments label input {  
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+
+	-webkit-appearance: none;
+	margin: 0 10px 0 0; 
+	border-radius: 50%;
+	border: 2px solid #E1E1E1;
+	box-shadow: 2px 5px 5px #E1E1E1;
+}
+
+main #booking-form .form-right form .payments label input:checked {
+	background-color: #2e86de;
+}
+
+main #booking-form .form-right form .payments label span {
+	font-family: raleway-regular;
+	font-weight: bold;
+	font-size: 22px;
+	margin-right: 50px; 
+}
+
+main #booking-form .form-right form h5 {
+	font-family: raleway-regular;
+	font-size: 22px;
+	margin-top: 35px;
+	font-weight: bold; 
+}
+
+main #booking-form .form-right form button {
+	background-color: #37003C;
+	color: white;
+	font-size: 30px;
+	font-family: smooch-regular;
+	width: 200px;
+	border: none;
+	margin: auto;  
+	padding: 5px 20px;   
+	position: relative;
+	top: 10px; 
+}
+
+main #booking-form .form-right form button:hover {
+	background-color: #341f97;
+}
+
+/*Footer*/
+footer {
+	color: white;
+	font-family: smooch-regular; 
+	/*border-top: 5px solid #B636DA;*/
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;  
+	padding: 10px; 
+	background-image: url("../imgs/footer-background.png");
+	background-size: cover;
+}
+
+footer .footer-title h4 {
+	font-size: 35px; 
+}
+
+footer .footer-copyright h5 {
+	font-size: 20px;
+}
+
+footer .stakeholder img {
+	width: 100px;
+	height: 100px;
+	margin-right: 10px; 
 }

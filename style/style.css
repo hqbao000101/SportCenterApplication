@@ -8,6 +8,11 @@
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style: none; 
 }
 
 /*fonts*/
@@ -19,6 +24,11 @@ a {
 @font-face {
 	font-family: "raleway-regular";
 	src:url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+	font-family: "saira";
+	src:url("fonts/SairaStencilOne-Regular.ttf");
 }
 
 /*header*/
@@ -125,7 +135,7 @@ header .menu-wrapper .header-left ul li:nth-child(3):hover .sub-menu-team ul li 
 main {
 	position: relative; 
 	width: 100%; 
-	height: 3400px;
+	/*height: 3400px;*/
 }
 
 main #banner {
@@ -535,11 +545,164 @@ main #about-area .content-wrapper #WEBSITE .part-2 h5 {
 	margin: 30px;
 }
 
+/*Booking list*/
+/*Booking heading*/
+main #booking-heading {
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+	border-bottom: 2px solid #ced6e0;
+	border-left: 10px solid #3742fa;  
+	padding: 0 20px;
+	font-family: raleway-regular;
+}
+
+main #booking-heading h3 {
+	font-size: 40px; 
+}
+
+main #booking-heading .search-input {
+	position: relative; 
+	display: flex;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
+}
+
+main #booking-heading .search-input .autocom-box {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 237px;
+	font-size: 20px;
+	z-index: 1; 
+	border: 1px solid black; 
+	background-color: #ecf0f1;
+	display: none;
+}
+
+main #booking-heading .search-input .autocom-box.active {
+	display: block;
+}
+
+main #booking-heading .search-input .autocom-box li {
+	list-style: none;
+	padding: 10px;
+}
+
+main #booking-heading .search-input .autocom-box li:hover {
+	background-color: #95a5a6;
+	color: white;
+}
+
+main #booking-heading .search-input input {
+		border: none;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		padding: 5px;
+}
+
+main #booking-heading .search-input i {
+		font-size: 20px;
+		margin-right: 80px;
+		padding: 10px;
+}
+
+main #booking-heading .search-input i:hover {
+	background-color: #1e90ff;
+	color: white; 
+	border-radius: 50%;
+}
+
+/*Content product*/
+main .booking-container .content-product{
+	margin: 50px;
+	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/*grid-template-rows: repeat(3, 1fr); */
+	grid-gap: 50px;
+
+	padding: 0px 30px;
+}
+
+main .booking-container .content-product .content-product-item {
+	background-color: #f1f2f6;
+	text-align: center;
+	border-radius: 20px;
+}
+
+main .booking-container .content-product .content-product-item:hover {
+	box-shadow: 5px 5px 5px black;
+	background-color: #70a1ff;
+	color: white;
+}
+
+main .booking-container .content-product .content-product-item img {
+	width: 100%;
+	height: 250px;
+	border-radius: 20px 20px 0 0; 
+}
+
+main .booking-container .content-product .content-product-item h3 {
+	font-family: smooch-regular;
+	font-size: 30px;
+	margin: 10px; 
+}
+
+
+/*Content paging*/
+main .booking-container .content-paging ul {
+	display: flex;
+	justify-content: flex-end;
+	justify-items: center;
+	align-items: center;
+	margin: 0px 80px 50px;  
+}
+
+main .booking-container .content-paging ul li {
+	list-style: none; 
+	border: 1px solid black;
+	padding: 5px 10px;
+	margin: 2px;
+}
+
+main .booking-container .content-paging ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+main .booking-container .content-paging ul .number-page{
+	display: flex;
+	justify-content: space-betweenp;
+	justify-items: center;
+	align-items: center;
+}
+
+main .booking-container .content-paging ul i {
+	border: 1px solid black;
+	padding: 8px 8px;
+	margin: 2px;
+}
+
+main .booking-container .content-paging ul i:hover {
+	background-color: #f0ad4e;
+}
+
+main .booking-container .content-paging ul .number-page li:hover {
+	background-color: #f0ad4e;
+}
+
+main .booking-container .content-paging ul i:nth-child(1) {
+	visibility: hidden;
+}
+
 /*footer*/
 footer {
 	color: white;
 	font-family: smooch-regular; 
-	border-top: 5px solid #B636DA;
+	/*border-top: 5px solid #B636DA;*/
 	display: flex;
 	justify-content: space-between; 
 	align-items: center;  
