@@ -59,6 +59,11 @@
 				<a href="bookingForm.php"><button>BOOKING NOW</button></a>
 			</div>
 		</section>
+
+		<!-- button-scroll-up -->
+		<?php  
+			include_once("../layout/go-to-top.php");
+		?>
 	</main>
 
 	<!-- footer -->
@@ -73,5 +78,7 @@
 			'color': 'white'
 		});
 	</script>
+
+	<script type="text/javascript" src="../js/javascript.js"></script>
 </body>
 </html>

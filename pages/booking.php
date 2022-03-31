@@ -72,6 +72,10 @@
        		</div>
    		</section>
 
+   		<!-- button-scroll-up -->
+		<?php  
+			include_once("../layout/go-to-top.php");
+		?>
 	</main>
 
 	<!-- footer -->

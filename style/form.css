@@ -95,7 +95,7 @@ header .menu-wrapper .header-right:hover {
 	border-color: orange;
 }
 
-header .menu-wrapper .sub-menu-team {
+/*header .menu-wrapper .sub-menu-team {
 	position: absolute;
 	left: 235px;
 	top: 60px;
@@ -123,7 +123,7 @@ header .menu-wrapper .sub-menu-team ul li:first-child a {
 
 header .menu-wrapper .sub-menu-team ul li:hover {
 	opacity: 1; 
-}
+}*/
 
 header .menu-wrapper .header-left ul li:nth-child(3):hover .sub-menu-team ul li {
 	display: block;
@@ -981,6 +981,107 @@ main #booking-form .form-right form button:hover {
 	background-color: #341f97;
 }
 
+/*team*/
+main #team-content {
+	display: inline-block;
+	padding: 50px;
+}
+
+main #team-content button {
+	border: 2px solid black;
+	border-bottom: none;
+	background-color: white; 
+	border-radius: 10px 10px 0 0;
+	padding: 10px 50px;
+	font-family: saira;
+	font-size: 30px;
+	margin: 0 10px 0 0; 
+	background-color: white;
+	color: black; 
+}
+
+main #team-content button:first-child {
+	background-color: #0984e3;
+	color: white;
+}
+
+main #team-content button:hover {
+	background-color: #0984e3;
+	color: white; 
+}
+
+main #team-content table tr {
+	border: 2px solid #E1E1E1;
+	box-shadow: 2px 5px 5px #E1E1E1;
+}
+
+main #team-content table .table-heading {
+	background-color: #74b9ff;
+	color: white; 
+}
+
+main #team-content table .table-items:hover {
+	background-color: #a4b0be;
+	color: white; 
+}
+
+main #team-content table tr th {
+	font-size: 30px;
+	font-family: raleway-regular;
+	font-weight: bold;
+	padding: 15px 100px 15px 10px;
+}
+
+main #team-content table tr td {
+	font-size: 20px;
+	font-family: raleway-regular;
+	padding: 15px 100px 15px 10px;
+}
+
+main #team-content table tr td:last-child {
+	padding-right: 0px;
+}
+
+main #team-content table tr td a button {
+	font-family: raleway-regular;
+	font-size: 20px;
+	border: none;
+	background-color: #4bcffa;
+	padding: 5px 15px; 
+	color: white; 
+	border-radius: 5px;
+}
+
+main #team-content table tr td a button:hover {
+	background-color: #3742fa;
+}
+
+/*Team information*/
+
+
+/*go-to-top button*/
+main #scroll-to-top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background-color: #686de0;
+	display: none;
+	border-radius: 10px;
+	opacity: 0.5; 
+}
+
+main #scroll-to-top i {
+	font-size: 30px;
+	padding: 10px 15px;
+	color: white; 
+}
+
+main #scroll-to-top:hover {
+	background-color: #4834d4;
+	opacity: 1; 
+	box-shadow: 5px 5px 5px black;
+}
+
 /*Footer*/
 footer {
 	color: white;
@@ -992,6 +1093,7 @@ footer {
 	padding: 10px; 
 	background-image: url("../imgs/footer-background.png");
 	background-size: cover;
+	margin-top: 20px; 
 }
 
 footer .footer-title h4 {

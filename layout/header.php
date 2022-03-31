@@ -6,15 +6,15 @@
 				<ul>
 					<li><a href="home.php">Home</a></li>
 					<li><a href="booking.php">Booking</a></li>
-					<li><a href="">Team</a>
-						<div class="sub-menu-team">
+					<li><a href="team.php">Team</a>
+						<!-- <div class="sub-menu-team">
 							<ul>
 								<li><a href="">Create a team</a></li>
 								<li><a href="">Team information</a></li>
 							</ul>
-						</div>
+						</div> -->
 					</li>
-					<li><a href="">Membership</a></li>
+					<!-- <li><a href="">Membership</a></li> -->
 					<li><a href="contact.php">Contact</a></li>
 				</ul>
 			</div>

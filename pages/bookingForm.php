@@ -95,6 +95,11 @@
 					</form>
 				</div>
 			</section>
+
+			<!-- button-scroll-up -->
+			<?php  
+				include_once("../layout/go-to-top.php");
+			?>
 	</main>
 
 	<!-- footer -->
@@ -105,5 +110,7 @@
 	<script>
 		$('main #booking-title-wrapper .infor-booking-button a:nth-child(2) span').css('background-image', 'linear-gradient(to bottom, #f0932b, #ffbe76, #f6e58d, #ecf0f1, #fff');
 	</script>
+
+	<script type="text/javascript" src="../js/javascript.js"></script>
 </body>
 </html>

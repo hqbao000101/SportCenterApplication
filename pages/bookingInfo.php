@@ -37,10 +37,16 @@
 			<div class="content-right">
 				<h3>MAP</h3>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4708955931806!2d106.69250791444985!3d10.775200462163566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f397073534b%3A0x677583c74b18228c!2zU8OibiBiw7NuZyBUYW8gxJDDoG4sIEh1eeG7gW4gVHLDom4gQ8O0bmcgQ2jDumEsIFBoxrDhu51uZyBC4bq_biBUaMOgbmgsIFF14bqtbiAxLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1648381725804!5m2!1svi!2s" width="1150" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<br>
 				<h4>Location: </h4>
 				<p>Số 1 Huyền Trân Công Chúa, Bến Thành, Quận 1, thành phố Hồ Chí Minh</p>
 			</div>
 		</section>
+
+		<!-- button-scroll-up -->
+		<?php  
+			include_once("../layout/go-to-top.php");
+		?>
 	</main>
 
 	<!-- footer -->
@@ -55,5 +61,7 @@
 			'color': 'white'
 		});
 	</script>
+
+	<script type="text/javascript" src="../js/javascript.js"></script>
 </body>
 </html>

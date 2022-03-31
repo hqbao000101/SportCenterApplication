@@ -1,3 +1,21 @@
+$(document).ready(function() {
+
+	$(window).scroll(function() {
+		/* Act on the event */
+		if( $(this).scrollTop() > 40 ){
+			$("#scroll-to-top").fadeIn();
+		} else {
+			$("#scroll-to-top").fadeOut();
+		}
+	});
+
+
+	$("#scroll-to-top").click(function() {
+		/* Act on the event */
+		$('html, body').animate({scrollTop : 0}, 'smooth');
+	});
+});
+
 $(function(){
 	$passHide = 1; // pass is hidden for users
 

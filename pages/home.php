@@ -30,7 +30,6 @@
 	<script type="text/javascript" src="../lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="../style/style.css">
-	<script type="text/javascript" src="../js/javascript.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -139,6 +138,12 @@
 
 			</div>
 		</section>
+
+		<!-- button-scroll-up -->
+		<?php  
+			include_once("../layout/go-to-top.php");
+		?>
+
 	</main>
 
 	<!-- footer -->
@@ -167,5 +172,7 @@
 			"max-glare": 1,
 		});
 	</script>
+
+	<script type="text/javascript" src="../js/javascript.js"></script>
 </body>
 </html>

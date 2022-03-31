@@ -132,7 +132,7 @@
 							<option value="None">Select a country</option>
 							<option value="VN">VN</option>
 							<option value="America">America</option>
-							<option value="England">Endland</option>
+							<option value="England">England</option>
 							<option value="Singapore">Singapore</option>
 							<option value="Japan">Japan</option>
 							<option value="Korean">Korean</option>
@@ -145,9 +145,12 @@
 			</form>
 		</section>
 		
+		<!-- button-scroll-up -->
+		<?php  
+			include_once("../layout/go-to-top.php");
+		?>
 	</main>
 
-	<!-- footer -->
 	<script type="text/javascript" src="../js/javascript.js"></script>
 </body>
 </html>
