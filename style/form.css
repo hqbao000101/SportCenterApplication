@@ -201,6 +201,15 @@ main #signin-form .form-left form #eye-toggle button:hover {
 	background-color: black;
 }
 
+main #signin-form .form-left form .error-message {
+	font-style: italic;
+	color: red; 
+	font-size: 13px;
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+}
+
 main #signin-form .form-left form #submit-area {
 	display: flex;
 	justify-content: space-between;
@@ -663,13 +672,13 @@ main #booking-title-wrapper .triangle-shape {
 	width: 0; 
 	height: 0;
 	position: absolute;
-	right: 653px;
+	right: 494px;
 	bottom: 0;
 }
 
 /*TaoDan image*/
 main #booking-title-wrapper > img {
-	width: 720px;
+	width: 560px;
 	height: 334px;
 }
 
@@ -872,22 +881,26 @@ main #booking-form .form-right form input {
 	box-shadow: 2px 5px 5px #E1E1E1;
 }
 
-main #booking-form .form-right form h3 {
+main #booking-form .form-right form .static {
 	margin-top: 0;
-	font-size: 20px;
-	font-family: raleway-regular;
-	width: 750px; 
-	border: 2px solid #E1E1E1;
-	box-shadow: 2px 5px 5px #E1E1E1;
-	padding: 10px 20px;
-	font-weight: bold;
+	font-weight: bolder;
+	margin-bottom: 0; 
+}
+
+main #booking-form .form-right form #booking-price {
+	margin-top: 40px; 
+	margin-bottom: 20px;
+	font-size: 25px;  
+	border: none;
+	box-shadow: none; 
+	background-color: white;
 }
 
 main #booking-form .form-right form .form-booking-date {
 	display: flex;
 	justify-content: flex-start;
 	justify-items: center; 
-	padding: 40px 0px; 
+	padding: 30px 0px; 
 }
 
 main #booking-form .form-right form .form-booking-date h5 {
@@ -1056,14 +1069,55 @@ main #team-content table tr td a button:hover {
 	background-color: #3742fa;
 }
 
-/*Team information*/
+/*Booking history*/
+main #history {
+	min-height: 300px;
+}
+
+main #history table {
+	margin: 40px auto;
+}
+
+main #history table tr {
+	border: 2px solid #E1E1E1;
+	box-shadow: 2px 5px 5px #E1E1E1;
+}
+
+main #history table tr:hover {
+	background-color: #a4b0be;
+	color: white; 
+}
+
+main #history table tr th {
+	background-color: #74b9ff;
+	color: white; 
+	font-size: 40px;
+	font-family: smooch-regular;
+	padding: 10px 40px;
+}
+
+main #history table tr td {
+	font-size: 20px;
+	font-family: raleway-regular;
+	padding: 30px 10px;
+}
+
+main #history table tr td button {
+	font-family: raleway-regular;
+	font-size: 20px;
+	border: none;
+	background-color: #3742fa;
+	padding: 5px 15px; 
+	color: white; 
+	border-radius: 5px;
+} 
 
 
 /*go-to-top button*/
 main #scroll-to-top {
 	position: fixed;
-	right: 30px;
-	bottom: 30px;
+	right: 10px;
+	bottom: 10px;
 	background-color: #686de0;
 	display: none;
 	border-radius: 10px;

@@ -4,13 +4,13 @@
 			<div class="match-week text-center">
 				<h4>Matches week 22</h4>
 				<h5>Tuesday 15 March</h5>
-				<img src="../imgs/15.png" alt="">
+				<img src="imgs/15.png" alt="">
 				<h5>Wednesday 16 March</h5>
-				<img src="../imgs/16.png" alt="">
+				<img src="imgs/16.png" alt="">
 				<h5>Saturday 19 March</h5>
-				<img src="../imgs/19.png" alt="">
+				<img src="imgs/19.png" alt="">
 				<h5>Sunday 20 March</h5>
-				<img src="../imgs/20.png" alt="">
+				<img src="imgs/20.png" alt="">
 			</div>
 
 			<!-- Player 1 : Jack Harrison -->
@@ -19,11 +19,11 @@
 					<span>Featured Player</span>
 					<i class="fas fa-upload"></i>
 				</div>
-				<img src="../imgs/JackHarrison.png" alt="">
+				<img src="imgs/JackHarrison.png" alt="">
 				<div class="player-card">
 					<span>Club</span>
 					<span>Leeds United
-						<img src="../imgs/Leeds-United-icon.png" alt="">
+						<img src="imgs/Leeds-United-icon.png" alt="">
 					</span>
 				</div>
 				<div class="player-card">
@@ -54,11 +54,11 @@
 					<span>Featured Player</span>
 					<i class="fas fa-upload"></i>
 				</div>
-				<img src="../imgs/Takumi.png" alt="">
+				<img src="imgs/Takumi.png" alt="">
 				<div class="player-card">
 					<span>Club</span>
 					<span>Liverpool
-						<img src="../imgs/liverpool.png" alt="">
+						<img src="imgs/liverpool.png" alt="">
 					</span>
 				</div>
 				<div class="player-card">
@@ -89,11 +89,11 @@
 					<span>Featured Player</span>
 					<i class="fas fa-upload"></i>
 				</div>
-				<img src="../imgs/Philippe.png" alt="">
+				<img src="imgs/Philippe.png" alt="">
 				<div class="player-card">
 					<span>Club</span>
 					<span>Aston Villa
-						<img src="../imgs/aston.png" alt="">
+						<img src="imgs/aston.png" alt="">
 					</span>
 				</div>
 				<div class="player-card">

@@ -6,9 +6,9 @@
 		<!-- title -->
 		<section id="booking-title-wrapper">
 			<div class="pitch-title">
-				<img src="../imgs/football-logo.png" alt="">
+				<img src="imgs/football-logo.png" alt="">
 				<div>
-					<h3>Tao Đàn Football Field</h3>
+					<h3><?=$pitch->getName();?> Football Field</h3>
 					<h4>CONTACT US</h4>
 					<div class="share-media">
 						<i class="fas fa-share-alt"></i>
@@ -23,10 +23,17 @@
 			<div class="triangle-shape">
 			</div>
 
-			<img src="../imgs/TaoDan.jpg" alt="">
+			<img src="imgs/TaoDan.jpg" alt="">
 
 			<div class="infor-booking-button">
-				<a href="bookingInfo.php"><span>Information</span></a>
-				<a href="bookingForm.php"><span>Booking</span></a>
+				<a href="index.php?c=booking&a=info&id=<?=$_GET['id'];?>"><span>Information</span></a>
+				<?php 
+                    session_id() || session_start();
+                    if (!empty($_SESSION["firstname"])) {
+                ?>
+				<a href="index.php?c=booking&a=form&id=<?=$_GET['id'];?>"><span>Booking</span></a>
+				<?php 
+					} 
+				?>
 			</div>
 		</section>

@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register</title>
-	<link rel="shortcut icon" type="image/x-icon" href="../imgs/sport-icon-color.png" />
-	<link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/sport-icon-color.png" />
+	<link rel="stylesheet" href="lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
 
-	<script type="text/javascript" src="../lib/jquery/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript" src="../lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="../style/form.css">
+	<link rel="stylesheet" href="style/form.css">
 </head>
 <body>
 	<!-- header -->
 	<?php  
-		include_once('../layout/header.php');
+		include_once('layout/header.php');
 	?>
 
 	<!-- main -->
@@ -26,7 +26,7 @@
 		</section>
 
 		<section id="register-form">
-			<form action="role.php" method="POST">
+			<form action="index.php?c=register&a=register" method="POST">
 				<h3>Your Personal Detail</h3>
 				<div class="content-wrapper">
 					<!-- First Name -->
@@ -53,7 +53,7 @@
 						<span>*Required</span>
 					</div>
 					<div>
-						<input type="text" placeholder="Email Address" name="Email" required>
+						<input type="text" placeholder="Email Address" name="Email" id="register-email" required>
 						<h5>* We will send you a confirmation email to this address</h5>
 					</div>
 
@@ -64,7 +64,7 @@
 					</div>
 					<div>
 						<div id="eye-toggle">
-							<input type="password" placeholder="Password" name="Password" required>
+							<input type="password" placeholder="Password" name="Password" id="register-password" required>
 							<button class="PassShow">Show</button>
 						</div>
 						<h5>* At least 8 characters</h5>
@@ -141,16 +141,16 @@
 						</select>
 					</div>
 				</div>
-				<button type="submit" id="register-form-submit">Register</button>
+				<button type="submit" id="register-form-submit" class="check">Register</button>
 			</form>
 		</section>
 		
 		<!-- button-scroll-up -->
 		<?php  
-			include_once("../layout/go-to-top.php");
+			include_once("layout/go-to-top.php");
 		?>
 	</main>
 
-	<script type="text/javascript" src="../js/javascript.js"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>

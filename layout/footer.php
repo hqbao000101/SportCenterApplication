@@ -12,8 +12,8 @@
 		</div>
 
 		<div class="stakeholder">
-			<img src="../imgs/KHTN.png" alt="">
-			<img src="../imgs/AUT.png" alt="">
-			<img src="../imgs/ITEC.jpg" alt="">
+			<img src="imgs/KHTN.png" alt="">
+			<img src="imgs/AUT.png" alt="">
+			<img src="imgs/ITEC.jpg" alt="">
 		</div>
 	</footer>

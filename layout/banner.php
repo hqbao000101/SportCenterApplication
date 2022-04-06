@@ -1,7 +1,7 @@
 <section id="banner">
 			<div class="grid-wrapper">
 				<div class="grid-item">
-					<img style="height: 350px; width: 355px" src="../imgs/banner-01.jpg" alt="error">
+					<img style="height: 350px; width: 355px" src="imgs/banner-01.jpg" alt="error">
 				</div>
 				<div class="grid-item">
 					<h4>News</h4>
