@@ -26,7 +26,7 @@
 		</section>
 
 		<section id="contact-content">
-			<form action="index.php" method="POST">
+			<form action="index.php?c=contact&a=sendContact" method="POST">
 				<!-- User name -->
 				<div class="contact-items contact-item-1">
 					<h3>Name</h3>

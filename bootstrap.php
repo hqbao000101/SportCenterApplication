@@ -14,4 +14,5 @@
 	require_once ABSPATH . "model/role/RoleRepository.php";
 	require_once ABSPATH . "model/pitch/Pitch.php";
 	require_once ABSPATH . "model/pitch/PitchRepository.php";
+	require_once ABSPATH . "vendor/autoload.php";
 ?>

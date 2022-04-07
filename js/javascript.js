@@ -123,7 +123,7 @@ $(document).ready(function() {
 			totalPrice = priceNumber + 200000;
 		}
 
-		document.getElementById('booking-price').innerHTML = totalPrice;
+		$('#booking-price').val(totalPrice);
 	});
 
 });

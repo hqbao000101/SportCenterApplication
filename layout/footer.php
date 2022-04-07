@@ -7,7 +7,7 @@
 
 		<div class="footer-copyright">
 			<h5>Copyright © 2022-2023 SManage - SportCenter. All Rights Reserved.</h5>
-			<h5>Email: Group08@itec.hcmus.edu.vn</h5>
+			<h5>Email: CS207bSportManagement@gmail.com</h5>
 			<h5>Contact: 0345677908 (Admin)</h5>
 		</div>
 
