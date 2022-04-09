@@ -126,6 +126,39 @@ $(document).ready(function() {
 		$('#booking-price').val(totalPrice);
 	});
 
+	$("main #booking-form .form-right #booking-month").change(function (e) {
+		$month = $("main #booking-form .form-right #booking-month").val();
+		$monthNumber = Number($month);
+		$date = $("main #booking-form .form-right #booking-date");
+		$date.empty();
+
+		switch ($monthNumber) {
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				for (let i = 1; i <= 30; i++) {
+					$content = "<option value='" + i + "'>" + i + "</option>";
+					$date.append($content);
+				}
+				break;
+
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				for (let i = 1; i <= 31; i++) {
+					$content = "<option value='" + i + "'>" + i + "</option>";
+					$date.append($content);
+				}
+				break;
+				
+		}
+	});
+
 });
 
 $(function(){

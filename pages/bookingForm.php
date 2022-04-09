@@ -47,31 +47,24 @@
 						<input type="text" class="static" name="selected-pitch" value="<?=$pitch->getName();?>" readonly>
 						<div class="form-booking-date">
 							<h5>Month:</h5>
-							<select name="month-booking" id="" required>
+							<select name="month-booking" id="booking-month" required>
 								<option value=""></option>
-								<option value="5">May</option>
-								<option value="6">June</option>
-								<option value="7">July</option>
-								<option value="8">August</option>
-								<option value="9">September</option>
-								<option value="10">October</option>
-								<option value="11">November</option>
-								<option value="12">December</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
 							</select>
 							<h5>Day:</h5>
-							<select name="day-booking" id="" required>
+							<select name="day-booking" id="booking-date" required>
 								<option value=""></option>
-								<?php 
-									for ($i = 1; $i <= 30; $i++){
-								?>
-								<option value="<?=$i;?>"><?=$i;?></option>
-								<?php  
-									}
-								?>
 							</select>
 							<h5>Year:</h5>
 							<select name="year-booking" id="" required>
-								<option value=""></option>
 								<option value="2022">2022</option>
 							</select>
 						</div>
